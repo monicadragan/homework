@@ -1,0 +1,3 @@
+The application makes statistics for the words in a big test using the mapper reducer paradigm, in MPI.
+Use make to run the application.
+

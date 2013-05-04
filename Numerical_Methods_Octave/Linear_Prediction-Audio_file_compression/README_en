@@ -1,0 +1,11 @@
+The application uses Linear prediction to compress and decompress audio files.
+
+Use:
+compress(filename, sample lenth in ms, no of samples used for prediction)
+decompress(filename)
+
+Example:
+compress("records/donuts.wav",0.02,40)
+decompress("records/donuts.compressed")
+
+

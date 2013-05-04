@@ -1,0 +1,10 @@
+
+The application performs a BMP file compress using a JPEG compression
+
+Use:
+compress(bmp_filename, myjpg_filename)
+decompress(myjpg_filename, bmp_filename)
+
+Example:
+
+

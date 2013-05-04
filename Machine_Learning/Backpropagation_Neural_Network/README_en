@@ -1,0 +1,5 @@
+Use:
+g++ -o backpropagation tema2_backpropagation.cpp
+./backpropagation nr_nodes_hidden_layer nr_layers output_statistics_file
+
+define the DEBUG variable for a more detailed output

@@ -1,0 +1,7 @@
+2
+N P
+4
+VREME discret 3 soare nori ploaie
+TEMPERATURA discret 3 cald placut racoare
+UMIDITATE discret 2 mare normal
+VANT discret 2 fals adev

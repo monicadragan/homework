@@ -1,0 +1,21 @@
+20
+7.1 2.4 square red C5
+6.1 ? ? red C4
+2.3 2.6 circle ? C6
+1.1 ? circle black C1
+? ? rectangle ? C5
+? 1.9 rectangle ? C2
+8.8 1.9 rectangle white C3
+? 1.8 square white C4
+7.7 1.8 square yellow C1
+11.8 ? circle ? C6
+4.7 7.3 rectangle blue C3
+11.1 7.3 ? ? C1
+8.2 6.6 ? red C5
+1.9 5.4 square white C1
+1.7 2.3 square ? C5
+2.8 2.1 circle red C6
+1.1 7.1 ? black C1
+7.2 7.7 rectangle white C3
+1.5 ? rectangle black C4
+? ? ? black C5

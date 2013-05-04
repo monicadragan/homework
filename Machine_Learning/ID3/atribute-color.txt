@@ -1,0 +1,7 @@
+6
+C1 C2 C3 C4 C5 C6
+4
+width numeric
+height numeric
+shape discret 3 square circle rectangle
+colour discret 5 black white yellow blue red

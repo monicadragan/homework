@@ -1,0 +1,21 @@
+Detalii de implementare:
+
+functiile Octave pot fi rulate astfel:
+
+linear_isotropic_diffusion("brain.jpg",50,"lin_iso_brain50.jpg")
+nonlinear_isotropic_diffusion("brain.jpg",50,"nonlin_iso_brain50.jpg")
+nonlinear_anisotropic_diffusion("brain.jpg",50,"nonlin_aniso_brain50.jpg")
+
+* filtrarea prin difuzie izotropica liniara
+Practic pentru fiecare pixel se face media ponderata cu cei 4 pixeli vecini
+Aceasta filtrare trateaza toti pixelii identic (intreaga imagine este blurata)
+
+* filtrarea prin difuzie izotropica neliniara
+Se tine cont ca pixelii care apartin conturului (gradient mare) sa fie mai putin blur-ati (ponderea este mai mica)
+
+* filtrarea prin difuzie anizotropica neliniara
+Se pondereaza fiecare pixel tinand cont de variatia gradientului pe cele 8 directii. 
+
+
+
+

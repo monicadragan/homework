@@ -1,0 +1,46 @@
+EXERCITIUL 1
+
+Se aplica iterativ formula de calcul a rezultatului. Algoritmul se opreste cand se atinge numarul de iterarii (maxiter) sau apropierea dintre solutiile de la ultimii 2 pasi atinge precizia dorita (eps).
+
+--------------------------------------------------------------------------------------
+
+EXERCITIUL 2
+
+Ax=b
+
+Se inmulteste la stanga cu matrici Q formate din vectori householder (Q aplicat lui A la pasuk k, creeaza zerouri sub diagonala principala, pe coloana k).
+In urma inmultirilor QnQn-1...Q2Q1A , A devine o matrice superior triunghiulara.
+Alternativ se modifica si b urile.
+Pentru a rezolva sistemul astfel obtinut, folossc functia suptr care rezolva sisteme cu matricea coeficientilor superior triunghiulara. 
+
+--------------------------------------------------------------------------------------
+
+EXERCITIUL 3
+comprimarea fisierelor wav
+
+1. functia compress(fisier_wav ; durata (d) segment in milisecunde ; p esantioane dupa care se face predictia )
+
+-functia scrie in fisierul *.compressed urmatoarele:
+
+	d,
+	p,
+	p valori pt fiecare segment, 
+	p coeficienti de predictie- intercalati, dupa fiecare din cele p valori
+
+
+-pentru calcularea coeficientilor am folosit metoda Levinson, pentru care se apeleaza functia levinson (care este recursiva, si trebuie apelata cu parametrii (A,b,1,0,0) pentru un sistem Ax=b cu matrice de tip Toeplitz)
+
+-ultimul segment de d milisecunde este ignorat (timpul este prea mic pt ca sa fie sesizat de ureche -- la timpi mai mici de 0.1 secunde)
+
+2. functia decompress
+
+	aplica algorimul de prezicere a valorilor care lipsesc din fisierul comprimat
+	momentan retin valorile pe 32 biti - ceea ce duce la o dublare a marimii fisierului comprimat, fata de cazul cand as fi folosit scriere pe 16 biti
+
+
+-pentru un rezultat satisfacator se poate apela functia de compresie cu parametrii d=0.02 si p=40 -- compresie 0%
+-pentru d=0.02 si p=100 rezultatul este aproape de original, numai ca scopul comprimarii (reducerea "greutatii") nu mai este indeplinit!
+-cu cat marim timpul de segmentare (d), semnalul este din ce in ce mai distorsionat si zgomotul de fundal creste (pt d=0.03, p=30 -- se aude ca dintr-un elicopter).
+
+-weakness: timpul de executie (compresie+decompresie) cam depaseste durata wav ului original 
+-idea.wav- ar trebui testat intr-o pauza de cafea!

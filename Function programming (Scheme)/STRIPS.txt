@@ -1,0 +1,39 @@
+*** Move(room1, room2)
+Preconditii (se face conjuncie intre ele):
+	- robotul se afla in room1: Location(room1)
+	- exista poarta intre room1 si room2: Door(room1,room2)
+	- robotul se poate misca (are numar par de bile in buzunare): 
+		Carries('Red, n) ^ Carries('Blue, m) ^ Carries('Gray,p) ^ Sum(m,n,p,s) ^ Even(s)
+Eliminari: Location(room1)
+Adaugari: Location(room2)
+
+*** Load(color)
+Preconditii (se face conjuncie intre ele):
+	- robotul se afla intr-o camera: Location(room)
+	- robotul are cel putin un buzunar liber: Carries('Red,r) ^ Carries('Blue,b) ^ Carries('Gray, g) ^ Lower(2, Sum(r,b,g)))
+	- in camera e cel putin o bila de culoarea color: Spheres(color, room, n) ^ Positive(n)
+	- robotul se afla intr-o camera de alta culoare decat culoarea bilei pe care o incarca: 
+		Color(room, color2) ^ Different(color, color2)
+Eliminari: 
+	- Spheres(color, room, n)
+	- Carries(color,m)
+Adaugari: 
+	- Spheres(color, room, n1), Succ(n,n1)
+	- Carries(color,m1), Succ(m1,m)
+
+*** Unload(color)
+Preconditii (se face conjuncie intre ele):
+	- robotul se afla intr-o camera: Location(room)
+	- robotul are cel putin o bila buzunare: 
+		Or((Carries('Red,n) ^ Positive(n)), (Carries('Blue,n) ^ Positive(n)), (Carries('Gray,n) ^ Positive(n)))
+	- Spheres(color, room, n)
+	- Carries(color,m)
+Eliminari:
+	- Spheres(color, room, n)
+	- Carries(color,m)
+Adaugari:
+	- Spheres(color, room, n1), Succ(n1,n)
+	- Carries(color,m1), Succ(m,m1)
+
+
+

@@ -1,0 +1,23 @@
+Detalii de implementare:
+
+Pentru elaborarea unui plan au loc urmatorii pasi:
+- la fiecare pas se genereaza un nou nivel in arborele de stari, ordinea nodurilor-copil fiind generate in concordanta cu anumite euristici (vezi sectiunea Euristici) 
+- se adauga actiunile posibile in coada cu toate actiunile posibile
+- la explorarea in adancime se alege primul copil al nodului curent si se adauga in coada de actiuni
+- in urma actiunii alese, se genereaza noua stare curenta si se adauga in coada de stari
+- se verifica daca actiunea aleasa nu genereaza o stare care a mai fost evaluata (se compara starea curenta cu toate starile anterioare)
+- in cazul in care s-a generat un ciclu, se merge inapoi cu un pas in explorare si se incearca o noua varianta (se elimina primul element din fiecare coada si se continua recursivitatea)
+- in cazul in care numarul total de bile rosii care se afla in camere este mai mic decat 
+- recursivitatea se opreste atunci cand goal-ul face parte din starea curenta
+- pentru a evita interblocajul, daca un robot cara singura bila de culoare opusa care nu este in camera ei, robotul este fortat sa faca unload
+
+*** Euristici folosite:
+In afara de restrictiile cerute in enunt, pentru generarea actiunilor care completeaza urmatorul nivel in arborele de stari se iau in considerare urmatoarele conditii (vezi functiile generate_possible_actions si check_***_color, applu_*** ):
+	- daca robotul nu are nici o bila de culoarea lui iar in camera se afla o bila de culoare => prioritara este actiunea load apoi move si unload
+	- daca robotul se afla in camera de culoarea lui si are in buzunar o bila de culoare, atunci prioritar este unload
+	- in orice alt caz prioritara este actiunea move
+	- daca robotul se afla in camera lui, culoarea prioritara pt load este culoarea opusa si apoi gri, altfel, in orice alta camera, prioritara la load este bila culoarea robotului
+	
+*** Posibile imbunatatiri
+	Functia de generare a planului mai are un parametru: forbidden actions (momentan nefolosit). Pentru imbunatatiri ulterioare s-ar putea folosi restrictii suplimentare de genul: ne este permis sa se faca load si unload la o bile de aceeasi culoare in aceeasi camera. Acest fapt este verificat prin compararea world-stateurilor, dar punand aceasta conditire suplimentara s-ar ajunge mai rapid la solutie.
+	

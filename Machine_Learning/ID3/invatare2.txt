@@ -1,0 +1,12 @@
+10
+old yes swr  C1
+old no swr   C1
+old no hwr  C1
+mid yes swr  C1
+mid yes hwr  C1
+mid no hwr  C2
+mid no swr  C2
+new yes swr  C2
+new no hwr  C2
+new no swr  C2
+

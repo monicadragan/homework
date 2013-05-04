@@ -1,0 +1,7 @@
+2
+C1 C2
+3
+age discret 3 old mid new
+competition distinct 2 no yes
+type discret swr hwr
+

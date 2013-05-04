@@ -1,0 +1,35 @@
+Dragan Monica, Tema 2 ML
+
+*********************
+Etapele algoritmului
+*********************
+0. datele de intrare se mapeaza in intervalul [0,1]
+1. Se initializeaza variabilele retelei cu valori intre -0.1 si 0.1: 
+- ponderile intre intrare-primul strat ascuns
+- ponderile intre straturile ascunse
+- ponderile intre ultimul strat ascuns si iesire
+- biasurile pentru nodurile straturilor ascunse si nodurile de iesire
+
+2. Etapa de training
+2.1 se parcurge forward reteaua si se calculeaza outputul fiecarui nod (fucntia de activare este sigmoid)
+2.2 se parcurse backward reteaua (de la iesire) si pentru fiecare nod se calculeaza eroarea (fata de valoarea asteptata la iesire, si apoi eroarea se propaga la straturile ascunse)
+2.3 in functie de eroarea obtinuta se ajusteaza ponderile
+2.4 conditii de oprire:
+- daca eroarea absoluta este mai mica decat un prag
+- daca eroarea stagneaza in ultimele N epoci
+- daca s-a atins numarul maxim de iteratii pe care sunt dispusa sa il astept
+
+3. Se testeaza reteaua pe exemplele de antrenare si pe exemple noi
+
+*********************
+Rulare
+*********************
+Mod de rulare (3 parametri):
+./backpropagation nr_noduri_hidden_layer nr_layere nume_fisier_output
+
+*********************
+Statistici
+*********************
+
+1. grafice_eroare: dispunerea rezultatelor rezultate din ANN fata de cele preconizate (target)
+

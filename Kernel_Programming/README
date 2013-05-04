@@ -1,0 +1,16 @@
+Detalii de implemenatre:
+
+Structuri de date
+- pentru copia tabelei syscall: un vector de structuri (care retin syscall_number, si o variabila booleana intercept)
+- pentru procesele monitorizate: o lista de structuri (care retin pid-ul si syscall-ul pe care il monitorizeaza procesul pid)
+
+Sunt 4 tipuri de requesturi care sunt interceptate de modul prin syscall-ul 0;
+- INTERCEPT: 
+	- schimba intrarea din tabela de syscall-uri corespunzatoare apelului de sistem dat ca parametru cu functia intercept
+	- in prealabil pastreaza o copie catre rutina de tratare originala a syscall-ului in copia tabelei syscall
+- MONITOR:
+	- daca procesul curent are dreptul de a monitoriza procesul dorit, se adauga o intarre in lista de procese
+
+- fiecare apel de sistem interceptat se va trata cu functia intercept (care ia de pe stiva parametrii). Inainte de afisarea logului se verifica daca procesul care a facut apelul de sistem se afla printre procesele monitorizate
+- atunci cand se incearca monitorizarea unui proces se verifica permisiunea prin consularea listei de copii a apelului de sistem (cf enuntului un proces neprivilegiat poate sa monitorizeze numai procese copii sau pe el insusi)
+- se sterge procesul din lista de procese atunci cand s-a terminat (s-a apelat syscall-ul __NR_exit_group interceptat de functia removeTerinatedProcess)	sau cand s-a interceptat STOP_MONITOR

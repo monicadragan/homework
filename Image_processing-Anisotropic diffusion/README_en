@@ -1,0 +1,10 @@
+The application implements 3 types of image diffusion: isotropic linear/nonlinear and nonlinear anisotropic
+Use:
+
+linear_isotropic_diffusion(input_image,no_of_iterations,output_image)
+
+Example
+linear_isotropic_diffusion("brain.jpg",50,"lin_iso_brain50.jpg")
+nonlinear_isotropic_diffusion("brain.jpg",50,"nonlin_iso_brain50.jpg")
+nonlinear_anisotropic_diffusion("brain.jpg",50,"nonlin_aniso_brain50.jpg")
+

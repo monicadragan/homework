@@ -1,0 +1,26 @@
+Mod de utilizare:
+- programul se lanseaza din clasa Main prin crearea unui obiect de tip DecisionTree
+- fisierele de intrare si cazurile specificate in enuntul temei se paseaza ca parametrii constructorului
+
+Detalii de implementare:
+
+- Valorile atributelor discrete se inlocuiesc inainte de rularea algoritmului, in functie de modalitatea aleasa.
+- Valorile atributelor numerice se inlocuiesc la fiecare iteratie, pentru fiecare atribut numeric, 
+in functie de granita aleasa, astfel: 
+	-se ordoneaza crescator valorile pentru atributul respectiv, ingnorand exemplele cu valori necunoscute pentru acel atribut. 
+	-pentru fiecare granita detectata (granita intre 2 exemple consecutive din clase diferite) se cacluleaza castigul informational
+	obtinut daca am eticheta valorile numerice cu 2 lable-uri (lable1 = valori mai mici decat valoarea medie a valorilor de la granita,
+	iar lable2 pentru valori mai mari). 
+	-se inlocuiesc valorile necunoscute cu unul dintre lable-uri folosind regula selectata
+	-se calculeaza castigul informational pentru fiecare granita in parte, dupa ce s-au inlocuit valorile necunoscute
+	-se alege granita cu castig informational cel mai mare pentru atributul respectiv
+	
+- In cazul propagarii atributelor numerice se impune o limita de propagare egala cu numarul de clase distincte din setul de date
+
+Workflow:
+- la inceputul algoritmului se inlocuiesc valorile necunoscute (functia replaceUnknown)
+- la fiecare iteratie se calculeaza castigul informational pentru fiecare atribut (functia castig_informational)
+- se alege atributul cu castigul inforrmational cel mai mare, in functie de care se imparte setul de date
+- pentru fiecare subset obtinut se reaplica algoritmul
+
+

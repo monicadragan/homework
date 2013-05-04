@@ -1,0 +1,10 @@
+The application finds a strategy for agent movement, using forward chaining.
+Each agent can pick balls of the same color, and can move only when holding 0 or 2 balls.
+The goal of each agent is to move all the balls of the agent's color to the room with agent's color. 
+
+Use: 
+open play.scm with a DrScheme
+run play.scm
+
+change scenario test from the last line of play.scm (scenatios from 1 to 5)
+(begin (run "scenario2.scm" 1)) 

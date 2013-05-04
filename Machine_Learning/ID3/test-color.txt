@@ -1,0 +1,11 @@
+10
+1.1 2.2 circle black
+7.2 0.4 rectangle blue
+4.3 1.7 circle white
+1.5 7.7 rectangle red
+7.2 11.7 square yellow
+3.2 11.1 square red
+11.3 10.4 circle yellow
+9.1 8.5 square red
+7.3 7.2 circle white
+6.9 0.2 rectangle black

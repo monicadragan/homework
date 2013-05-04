@@ -1,0 +1,19 @@
+2
+democrat republican
+16
+handicapped-infants discret 2 y n
+water-project-cost-sharing discret 2 y n
+adoption-of-the-budget-resolution discret 2 y n
+physician-fee-freeze discret 2 y n
+el-salvador-aid discret 2 y n
+religious-groups-in-schools discret 2 y n
+anti-satellite-test-ban discret 2 y n
+aid-to-nicaraguan-contras discret 2 y n
+mx-missile discret 2 y n
+immigration discret 2 y n
+synfuels-corporation-cutback discret 2 y n
+education-spending discret 2 y n
+superfund-right-to-sue discret 2 y n
+crime discret 2 y n
+duty-free-exports discret 2 y n
+export-administration-act-south-africa discret 2 y n

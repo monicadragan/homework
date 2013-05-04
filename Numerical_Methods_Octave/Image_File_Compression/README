@@ -1,0 +1,15 @@
+3 funnctii:
+
+- compress
+	transformarea cosinus o fac cu ajutorul unei matrice care prin inmultire la stanga face prima suma (y=0:7) iar prin inmultire la dreapta cu 		transpusa calculeaza a 2a suma (x=0:7) 
+	TAT-1 --> realizeaza transformarea cosinus pe matricea A
+	unde T ={
+		1/sqrt(8) pt i=1
+		sqrt(1/4) * cos((2*j+1)*i*pi/16) pt i=2:8
+		}
+
+-decompress
+	operatiile inverse fata de cele din compress
+	transformarea din Y Cb Cr in RGB o face functia sistem
+-sistem
+	rezolva un sistem Cramer avand necunoscutele R G B si termenii liberi Y Cr Cb	

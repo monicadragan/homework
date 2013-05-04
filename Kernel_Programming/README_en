@@ -1,0 +1,4 @@
+The application intercepts system calls and makes a log
+
+To test the application copy the compiled modul into the test directory and run test.c
+

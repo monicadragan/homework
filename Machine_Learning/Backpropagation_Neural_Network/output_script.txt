@@ -1,0 +1,199 @@
+monique@work:~/Machine Leraning/tema2$ bash script.sh
+1 nivele cu 3 noduri fiecare
+Eroarea de antrenare = 0.0731631
+Nr teste care au trecut: 142 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 4 noduri fiecare
+Eroarea de antrenare = 0.0731697
+Nr teste care au trecut: 142 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 5 noduri fiecare
+Eroarea de antrenare = 0.073173
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 6 noduri fiecare
+Eroarea de antrenare = 0.0731702
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 7 noduri fiecare
+Eroarea de antrenare = 0.0731596
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 8 noduri fiecare
+Eroarea de antrenare = 0.0731412
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 9 noduri fiecare
+Eroarea de antrenare = 0.073115
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 10 noduri fiecare
+Eroarea de antrenare = 0.0730838
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 11 noduri fiecare
+Eroarea de antrenare = 0.0730573
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 12 noduri fiecare
+Eroarea de antrenare = 0.0730394
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+1 nivele cu 13 noduri fiecare
+Eroarea de antrenare = 0.0730252
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 3 noduri fiecare
+Eroarea de antrenare = 0.0734943
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 4 noduri fiecare
+Eroarea de antrenare = 0.0733754
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 5 noduri fiecare
+Eroarea de antrenare = 0.0733184
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 6 noduri fiecare
+Eroarea de antrenare = 0.0735274
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 7 noduri fiecare
+Eroarea de antrenare = 0.0733028
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 8 noduri fiecare
+Eroarea de antrenare = 0.0733053
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 9 noduri fiecare
+Eroarea de antrenare = 0.0733057
+Nr teste care au trecut: 144 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 10 noduri fiecare
+Eroarea de antrenare = 0.073305
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 11 noduri fiecare
+Eroarea de antrenare = 0.0733036
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 12 noduri fiecare
+Eroarea de antrenare = 0.0733016
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+2 nivele cu 13 noduri fiecare
+Eroarea de antrenare = 0.0735788
+Nr teste care au trecut: 144 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 3 noduri fiecare
+Eroarea de antrenare = 0.0741532
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 59 din 73
+
+---------------------
+3 nivele cu 4 noduri fiecare
+Eroarea de antrenare = 0.073544
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 5 noduri fiecare
+Eroarea de antrenare = 0.0737127
+Nr teste care au trecut: 144 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 6 noduri fiecare
+Eroarea de antrenare = 0.0733357
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 7 noduri fiecare
+Eroarea de antrenare = 0.0734976
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 8 noduri fiecare
+Eroarea de antrenare = 0.0734683
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 9 noduri fiecare
+Eroarea de antrenare = 0.0734454
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 10 noduri fiecare
+Eroarea de antrenare = 0.073425
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 59 din 73
+
+---------------------
+3 nivele cu 11 noduri fiecare
+Eroarea de antrenare = 0.0731609
+Nr teste care au trecut: 144 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 12 noduri fiecare
+Eroarea de antrenare = 0.0731665
+Nr teste care au trecut: 143 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------
+3 nivele cu 13 noduri fiecare
+Eroarea de antrenare = 0.0732197
+Nr teste care au trecut: 145 din 160
+Nr teste care au trecut: 60 din 73
+
+---------------------

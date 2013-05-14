@@ -1,0 +1,11 @@
+Monica Dragan, Roscoff 2012
+
+The program estimates a PSWM for a given protein family and classifies the input proteins whether trey belong or not to the protein family.
+
+Example:
+
+[w l] = protein_family("train.faa","test2.faa")
+
+input: train file and test file in FASTA format
+output: PSW Matrix and classification (1 = belongs to the family, 0 otherwise)
+
